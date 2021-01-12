@@ -1,3 +1,29 @@
 .main-content__subtitle{
   font-family: 'Roboto', sans-serif;
 }
+.header{
+  border: dashed 1px red;
+  width: 80%;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+}
+.logo{
+  padding: 40px 0;
+  border: dashed 1px red;
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu__item{
+  padding: 0 13px;
+  border: dashed 1px red;
+}
+.menu__item:last-child{
+  padding-right: 0;
+}
+.main-content{
+  width: 80%;
+  margin: auto;
+}
