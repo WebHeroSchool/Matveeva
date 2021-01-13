@@ -10,6 +10,7 @@
 }
 .logo{
   padding: 40px 0;
+  font: bold 24px/31px pt serif, arial, helvetica, sans-serif
   border: dashed 1px red;
 }
 .menu{
