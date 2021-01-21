@@ -146,7 +146,7 @@ background: #0056EC;
   #checkbox{
     opacity: 0;
   }
-  #checkbox:checked ~ .menu__btn > span {
+  #checkbox:checked ~ .menu__btn > span{
     transform: rotate(45deg);
   }
   #checkbox:checked ~ .menu__btn > span:before{
@@ -181,17 +181,18 @@ background: #0056EC;
     height: 2px;
     background-color: #0056EC;
   }
-  .menu__btn > span:before, .manu__btn > span:after{
+
+    .menu__btn > span:before{
     content: "";
-  }
-  /*.manu__btn > span:before{
-    content: '';
-    top: -8px;
-  }
-  .manu__btn > span:after{
-    content: '';
     top: 8px;
-  }*/
+    height: 3px;
+  }
+    .menu__btn > span:after{
+    content: "";
+    top: 16px;
+    height: 3px;
+  }
+
   .menu__box{
     display: block;
     position: fixed;
