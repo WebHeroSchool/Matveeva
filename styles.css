@@ -69,8 +69,23 @@
   font: 700 66px/87px 'pt serif', arial, helvetica, sans-serif;
   width: 40%;
 }
+@keyframes change-background {
+  0%{
+    background: #ECF3FF;
+  }
+  30%{
+    background: #7EE8D4;
+  }
+  80%{
+    background: #5193F4;
+  }
+  100%{
+    background: #ECF3FF;
+  }
+}
 .main__title_blue{
   background: #ECF3FF;
+  animation: change-background 10s infinite ease-in-out;
 }
 .main__subtitle{
   margin: 0 0 40px 0;
