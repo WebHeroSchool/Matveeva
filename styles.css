@@ -113,7 +113,25 @@
   display: none;
 }
 
-
+@media(max-width:1700px){
+  .header{
+    margin: 40px 0 20px 0;
+    padding: 0;
+  }
+  .wrapper{
+    margin: 0 220px;
+  }
+  .main{
+    margin: 0;
+    padding: 0;
+  }
+  .main__title{
+    padding-top:14px;
+    padding-left: 0;
+    font: 700 50px/67px 'pt serif', arial, helvetica, sans-serif;
+    width: 50%;
+  }
+}
 @media(min-width:770px){
   .burger{
     display: none;
