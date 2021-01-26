@@ -114,21 +114,39 @@
 }
 
 @media(max-width:1500px){
-  .header{
-    margin: 40px 0 20px 0;
-    padding: 0;
-  }
   .wrapper{
-    margin: 0 220px;
+    margin: 0 auto;
+    width: max-content;
+  }
+  .header{
+    margin: 40px 0 20px 31px;
+    padding: 0;
+    width: 100%;
+  }
+  .menu__item{
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    margin-right: 30px;
   }
   .main{
     margin: 0;
     padding: 0;
+    width: 100%;
+    padding-bottom: 150px;
   }
   .main__title{
-    padding-top:15px;
+    padding: 12px 0 0 30px;
     font: 700 50px/67px 'pt serif', arial, helvetica, sans-serif;
     width: 50%;
+  }
+  .main__subtitle{
+    padding-left: 30px;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    width: 35%;
+  }
+  .main__button{
+    margin-left: 30px;
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    padding: 14px 21px;
   }
 }
 @media(min-width:770px){
