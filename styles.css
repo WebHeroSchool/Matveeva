@@ -207,7 +207,7 @@
   .main{
     margin: 0 0 43px 0;
     padding: 69% 0 0;
-    background-size: 80%;
+    background-size: 75%;
     background-position: top center;
     text-align: center;
   }
@@ -217,17 +217,16 @@
     padding: 0 0 0 13%;
     font: 700 30px/40px 'pt serif', arial, helvetica, sans-serif;
     width: 70%;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
   }
   .main__subtitle{
     margin-bottom: 38px;
     padding-left: 13%;
-    font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
+    font: 400 16px/19px 'Roboto', arial, helvetica, sans-serif;
     width: 70%;
-    letter-spacing: 0.5px;
   }
   .main__button{
-    margin-left: 0;
+    margin-left: -3%;
     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     padding: 14px 21px;
   }
@@ -268,7 +267,6 @@
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: -100%;
     width: 100%;
     height: 100%;
     margin: 0;
