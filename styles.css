@@ -5,7 +5,6 @@
   display:flex;
   justify-content: space-between;
 }
-
 .logo{
   width: 190px;
   height: 35px;
@@ -17,7 +16,7 @@
 }
 .menu__item{
   position: relative;
-  margin-right: 26px;
+  margin-right: 29px;
   font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
   color: #000;
   text-decoration:none;
@@ -53,23 +52,18 @@
   opacity: 1;
   width: 100%
 }
-
 .main{
   width: 80%;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 21px;
-  padding-bottom: 250px;
+  padding: 0 21px 250px 10px;
   background: url(img/main_img1.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50%;
 }
 .main__title{
-  margin-top: 125px;
-  margin-bottom: 35px;
-  padding-top: 73px;
-  padding-left: 3px;
+  margin: 125px 0 35px 0;
+  padding: 73px 0 0 3px;
   font: 1000 66px/88px 'pt serif', arial, helvetica, sans-serif;
   width: 40%;
 }
@@ -104,43 +98,100 @@
   color: #fff;
   background: #0056EC;
   border-radius: 4px;
- transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .main__button:hover{
   background: #52D2BC;
 }
+
 .menu__toggle{
   display: none;
 }
 
-@media(max-width:1700px){
-  .header{
-    margin: 40px 0 20px 0;
-    padding: 0;
-  }
-  .wrapper{
-    margin: 0 220px;
-  }
-  .main{
-    margin: 0;
-    padding: 0;
-  }
-  .main__title{
-    padding-top:14px;
-    padding-left: 0;
-    font: 700 50px/67px 'pt serif', arial, helvetica, sans-serif;
-    width: 50%;
-  }
-}
 @media(min-width:770px){
   .burger{
     display: none;
   }
 }
 
-@media(max-width:768px) {
+@media(max-width:1500px){
+  .wrapper{
+    margin: auto;
+    width: 73%;
+  }
   .header{
-    margin: 24px 14px 20px 16px;
+    margin: 40px 0 60px 31px;
+    padding: 0;
+    width: 100%;
+  }
+  .menu{
+    padding-right: 70px;
+  }
+  .menu__item{
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    margin-right: 28px;
+  }
+  .main{
+    margin: 0;
+    width: 100%;
+    padding-bottom: 150px;
+    background-position: 90%;
+  }
+  .main__title{
+    margin-top: 0;
+    margin-right: 0;
+    padding: 80px 0 1px 25px;
+    font: normal 50px/67px 'pt serif', arial, helvetica, sans-serif;
+    width: 50%;
+    letter-spacing: 2px;
+    line-height: 1.3;
+  }
+  .main__subtitle{
+    padding-left: 25px;
+    font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+    width: 35%;
+  }
+  .main__button{
+    margin-left: 30px;
+    font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+    padding: 14px 21px;
+  }
+}
+
+@media (max-width:1200px) {
+  .wrapper{
+    margin: auto;
+    width: 100%;
+    padding-left: 8px;
+  }
+  .header{
+    margin-right: 10px;
+    padding-left: 5px;
+    width: 98%;
+  }
+  .main{
+    background-position: 85%;
+  }
+  .main__title{
+    width: 45%;
+  }
+
+@media(max-width:900px) {
+  .main__title{
+    font: 700 40px/50px 'pt serif', arial, helvetica, sans-serif;
+    width: 50%;
+  }
+  .main__subtitle{
+    font: 500 17px/20px 'Roboto', arial, helvetica, sans-serif;
+    }
+}
+
+@media(max-width:769px) {
+  .wrapper{
+    margin: auto;
+  }
+  .header{
+    margin: 24px 14px 28px 16px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -154,25 +205,28 @@
     display: none;
   }
   .main{
-    margin: 0 55px 43px 35px;
-    padding: 74% 0 0;
-    background-size: 100%;
+    margin: 0 0 43px 0;
+    padding: 69% 0 0;
+    background-size: 75%;
     background-position: top center;
     text-align: center;
   }
   .main__title{
     margin-top: 0;
     margin-bottom: 31px;
-    padding: 3px 0 0 0;
+    padding: 0 0 0 13%;
     font: 700 30px/40px 'pt serif', arial, helvetica, sans-serif;
-    width: 100%;
+    width: 70%;
+    letter-spacing: 0.8px;
   }
   .main__subtitle{
     margin-bottom: 38px;
-    font: 500 16px/19px 'Roboto', arial, helvetica, sans-serif;
-    width: 100%;
+    padding-left: 13%;
+    font: 400 16px/19px 'Roboto', arial, helvetica, sans-serif;
+    width: 70%;
   }
   .main__button{
+    margin-left: -3%;
     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     padding: 14px 21px;
   }
@@ -184,8 +238,8 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 3%;
-    left: 87%;
+    top: 4%;
+    left: 83%;
     width: 25px;
     height: 30px;
     cursor: pointer;
@@ -213,7 +267,6 @@
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: -100%;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -257,4 +310,5 @@
   .menu__item_burger:hover{
     background-color: #7EE8D4;
     opacity: 30%;
+ }
 }
